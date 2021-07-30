@@ -7,7 +7,7 @@ function db() {
     return 0
   fi
 
-  echo "Are you sure you want to delete branch $current_branch?"
+  echo "Are you sure you want to delete local branch $current_branch?"
   select yn in "Yes" "No"; do
     case $yn in
       Yes ) break;;
