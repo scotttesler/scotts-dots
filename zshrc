@@ -22,8 +22,12 @@ fi
 
 # Aliases.
 alias dotfiles="cd ~/.dotfiles"
-# alias ls="ls -ahlFG" # Backup in case 'exa' is not available.
-alias ls="exa -ahl"
+alias exa="exa -ahl"
+alias ls="ls -ahlFG"
+
+# Aliases - GitHub.
+alias bs="script/bootstrap && bin/rake db:migrate db:test:prepare"
+alias tss="cd /workspaces/token-scanning-service"
 
 # Prompt.
 if [[ ! -n "$CODESPACES" ]]; then
