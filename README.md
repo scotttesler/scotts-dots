@@ -18,3 +18,9 @@ To update all submodules to their latest commits:
 ```bash
 git submodule update --recursive --remote
 ```
+
+or
+
+```bash
+git pull --recurse-submodules
+```
